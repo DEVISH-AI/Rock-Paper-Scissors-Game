@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP&S Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="heading">
+    <h1>🎮 Rock Paper & Scissors 🎮</h1>
+    
+
+    <div class="game-container">
+        <div class="choices">
+    <button class="choice-button" onclick="
+    let computerChoice = generateComputerChoice();
+     let resultMsg = getResult('Rock', computerChoice);
+    showResult('Rock', computerChoice, resultMsg);
+    
+    ">    
+    ✊🏻
+    </button>
+
+    <button class="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+     resultMsg = getResult('Paper', computerChoice);
+
+    showResult('Paper', computerChoice, resultMsg);
+
+    
+    ">    
+    🖐🏻
+    </button>
+
+
+    <button class="choice-button" onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Scissors', computerChoice);
+
+    showResult('Scissors', computerChoice, resultMsg);
+
+    
+    ">    
+    ✌🏻
+    </button>
+    </div>
+
+    <div class="scoreboard">
+    <h3  id="user-move"></h3>
+
+    <div class="thinking-container">
+    <h3 id="thinking-message">Computer is thinking...</h3>
+    <div id="loader" class="loader"></div>
+    </div>
+
+    <h3  id="computer-move"></h3>
+    <h3 class="result-message" id="result"></h3>
+    <h3  id="score"></h3>
+    </div>
+
+    <div>
+    <button id="reset-btn" onclick="showResetModal();
+    ">🔄 Reset Game</button>
+    </div>
+
+</div>
+    
+<!-- Reset Confirmation Modal -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <h2>⚠️Reset Game?</h2>
+            <p>Are you sure you want to reset your score? This action cannot be undone!</p>
+            <div class="modal-buttons">
+                <button class="modal-button cancel-button" onclick="hideResetModal()">
+                    Cancel
+                </button>
+                <button class="modal-button confirm-button" onclick="confirmReset()">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        </script>
+</body>
+</html>
