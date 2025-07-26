@@ -250,3 +250,42 @@ background: linear-gradient(to right, #b61d41, #ff3f1d);
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .choice-button {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+    
+    .choices {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .game-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .choice-button {
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
+    width: 80%;
+  }
+
+  #user-move, #computer-move {
+    font-size: 1.3rem;
+  }
+
+  #loader {
+    width: 14px;
+    height: 14px;
+    border-width: 2px;
+  }
+}
