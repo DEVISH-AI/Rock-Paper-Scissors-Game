@@ -254,7 +254,7 @@ background: linear-gradient(to right, #b61d41, #ff3f1d);
 @media (max-width: 600px) {
     h1 {
         font-size: 1.5rem;
-    }
+      }
     
     .choice-button {
         width: 80px;
@@ -267,10 +267,11 @@ background: linear-gradient(to right, #b61d41, #ff3f1d);
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .game-container {
     padding: 1rem;
     margin: 1rem;
+    width: 85%;
   }
 
   .choice-button {
@@ -280,12 +281,24 @@ background: linear-gradient(to right, #b61d41, #ff3f1d);
   }
 
   #user-move, #computer-move {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .result-message {
+    font-size: 1.7rem;
+  }
+
+  #thinking-message{
+    font-size: 1.2rem;
   }
 
   #loader {
     width: 14px;
     height: 14px;
     border-width: 2px;
+  }
+
+  #score {
+    font-size: 1rem;
   }
 }
